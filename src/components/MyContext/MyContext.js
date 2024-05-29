@@ -5,7 +5,7 @@ const ThemeContext = createContext(null);
 
 export default function MyApp() {
   return (
-    <ThemeContext.Provider value="dark">
+    <ThemeContext.Provider value="light">
       <Form />
     </ThemeContext.Provider>
   )
