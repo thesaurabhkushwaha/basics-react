@@ -5,6 +5,7 @@ import Counter from "./components/MyRef/MyRef";
 import { useState } from "react";
 import { createTodos } from "./utils.js";
 import TodoList from "./components/MyTodo/TodoList.js";
+import ProductPage from "./components/MyCallback/ProductPage.js";
 
   const todos = createTodos();
 
@@ -36,7 +37,9 @@ export default function App() {
       {/* <MyApp/> */}
       {/* <Counter /> */}
       {/* <MyButton name={buttonName} showText={clicked}/> */}
-      <button onClick={() => setTab("all")}>All</button>
+
+      
+      {/* <button onClick={() => setTab("all")}>All</button>
       <button onClick={() => setTab("active")}>Active</button>
       <button onClick={() => setTab("completed")}>Completed</button>
       <br />
@@ -49,7 +52,22 @@ export default function App() {
         Dark mode
       </label>
       <hr />
-      <TodoList todos={todos} tab={tab} theme={isDark ? "dark" : "light"} />
+      <TodoList todos={todos} tab={tab} theme={isDark ? "dark" : "light"} /> */}
+
+      <label>
+        <input
+          type="checkbox"
+          checked={isDark}
+          onChange={e => setIsDark(e.target.checked)}
+        />
+        Dark mode
+      </label>
+      <hr />
+      <ProductPage
+        referrerId="wizard_of_oz"
+        productId={123}
+        theme={isDark ? 'dark' : 'light'}
+      />
     </>
   );
 }
