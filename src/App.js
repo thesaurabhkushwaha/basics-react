@@ -6,6 +6,7 @@ import { useState } from "react";
 import { createTodos } from "./utils.js";
 import TodoList from "./components/MyTodo/TodoList.js";
 import ProductPage from "./components/MyCallback/ProductPage.js";
+import { MyReducer } from "./components/MyReducer/MyReducer.js";
 
   const todos = createTodos();
 
@@ -54,7 +55,7 @@ export default function App() {
       <hr />
       <TodoList todos={todos} tab={tab} theme={isDark ? "dark" : "light"} /> */}
 
-      <label>
+      {/* <label>
         <input
           type="checkbox"
           checked={isDark}
@@ -67,7 +68,11 @@ export default function App() {
         referrerId="wizard_of_oz"
         productId={123}
         theme={isDark ? 'dark' : 'light'}
-      />
+      >
+
+      </ProductPage> */}
+
+      <MyReducer></MyReducer>
     </>
   );
 }
