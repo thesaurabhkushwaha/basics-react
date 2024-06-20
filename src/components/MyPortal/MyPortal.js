@@ -20,7 +20,7 @@ function NoPortalExample() {
     const [showModal, setShowModal] = useState(false);
     return (
       <>
-        <button onClick={() => setShowModal(true)}>
+        <button className="portal-button" onClick={() => setShowModal(true)}>
           Show modal without a portal
         </button>
         {showModal && (
@@ -35,7 +35,7 @@ function NoPortalExample() {
     const otherParent = document.getElementById("otherParent")
     return (
       <>
-        <button onClick={() => setShowModal(true)}>
+        <button className="portal-button" onClick={() => setShowModal(true)}>
           Show modal using a portal
         </button>
         {showModal && createPortal(
@@ -50,7 +50,7 @@ function ModalContent({ onClose }) {
     return (
       <div className="modal">
         <div>I'm a modal dialog</div>
-        <button onClick={onClose}>Close</button>
+        <button className="portal-button-close" onClick={onClose}>Close</button>
       </div>
     );
   }

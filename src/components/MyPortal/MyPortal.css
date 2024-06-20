@@ -70,3 +70,11 @@
     left: calc(50% - 125px);
     bottom: 70px;
   }
+
+  .portal-button{
+    background-color: lightblue;
+  }
+
+  .portal-button-close{
+    background-color: lightcoral;
+  }
