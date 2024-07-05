@@ -81,7 +81,7 @@ export default function App() {
       {/* <MyPortal></MyPortal>
       <MyButton></MyButton> */}
 
-      <div>
+      {/* <div>
         <p>
           <b>
             This is an example of error boundaries in React 16.
@@ -101,8 +101,9 @@ export default function App() {
         <p>These two counters are each inside of their own error boundary. So if one crashes, the other is not affected.</p>
         <ErrorBoundary><BuggyCounter /></ErrorBoundary> 
         <ErrorBoundary><BuggyCounter /></ErrorBoundary>
+      </div> */}
 
-      </div>
+      
 
     </>
   );
